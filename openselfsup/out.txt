@@ -1,0 +1,15 @@
+Using pip 22.3.1 from /home/mahip/miniconda3/envs/open-mmlab/lib/python3.7/site-packages/pip (python 3.7)
+Obtaining file:///home/mahip/ConCL/openselfsup
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: matplotlib in /home/mahip/miniconda3/envs/open-mmlab/lib/python3.7/site-packages (from openselfsup==0.3.0+1db69ec) (3.5.3)
+Requirement already satisfied: mmcv==1.0.3 in /home/mahip/miniconda3/envs/open-mmlab/lib/python3.7/site-packages (from openselfsup==0.3.0+1db69ec) (1.0.3)
+Requirement already satisfied: numpy in /home/mahip/miniconda3/envs/open-mmlab/lib/python3.7/site-packages (from openselfsup==0.3.0+1db69ec) (1.21.5)
+Requirement already satisfied: Pillow<=6.2.2 in /home/mahip/miniconda3/envs/open-mmlab/lib/python3.7/site-packages (from openselfsup==0.3.0+1db69ec) (6.2.2)
+Requirement already satisfied: packaging in /home/mahip/miniconda3/envs/open-mmlab/lib/python3.7/site-packages (from openselfsup==0.3.0+1db69ec) (24.0)
+Requirement already satisfied: six in /home/mahip/miniconda3/envs/open-mmlab/lib/python3.7/site-packages (from openselfsup==0.3.0+1db69ec) (1.16.0)
+Requirement already satisfied: terminaltables in /home/mahip/miniconda3/envs/open-mmlab/lib/python3.7/site-packages (from openselfsup==0.3.0+1db69ec) (3.1.10)
+Collecting sklearn
+  Using cached sklearn-0.0.post12.tar.gz (2.6 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'error'
