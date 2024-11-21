@@ -28,8 +28,17 @@ def build(cfg, registry, default_args=None):
 
 def build_backbone(cfg):
     """Build backbone."""
-   
-    return build(cfg, BACKBONES)
+    pretrained = cfg.pop('pretrained', None)
+
+    # Build the backbone without the pretrained argument
+    backbone = build(cfg, BACKBONES)
+
+    # Load pretrained weights, if specified
+    if pretrained is not None:
+        backbone.init_weights(pretrained=pretrained)
+
+    return backbone
+    # return build(cfg, BACKBONES)
 
 
 def build_neck(cfg):

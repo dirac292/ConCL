@@ -55,8 +55,10 @@ def parse_args():
     #####
     
     args = parser.parse_args()
-    if 'LOCAL_RANK' not in os.environ:
-        os.environ['LOCAL_RANK'] = str(args.local_rank)
+    # if 'LOCAL_RANK' not in os.environ:
+    #     os.environ['LOCAL_RANK'] = str(args.local_rank)
+    local_rank = int(os.environ.get('LOCAL_RANK', args.local_rank))
+    torch.cuda.set_device(local_rank)
 
     return args
 
