@@ -7,7 +7,7 @@ PY_ARGS=${@:3}
 PORT=${PORT:-29500}
 
 # Select GPUs 2 and 3
-export CUDA_VISIBLE_DEVICES=2,3
+export CUDA_VISIBLE_DEVICES=0,1
 
 WORK_DIR=$(echo ${CFG%.*} | sed -e "s/configs/work_dirs/g")/
 
